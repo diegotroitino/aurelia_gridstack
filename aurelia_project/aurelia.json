@@ -114,6 +114,7 @@
           "aurelia-templating",
           "aurelia-templating-binding",
           "text",
+          "jquery",
           {
             "name": "aurelia-templating-resources",
             "path": "../node_modules/aurelia-templating-resources/dist/amd",
@@ -129,6 +130,35 @@
             "path": "../node_modules/aurelia-testing/dist/amd",
             "main": "aurelia-testing",
             "env": "dev"
+          },
+          {
+            "name": "jquery-ui",
+            "path": "../node_modules/jquery-ui-dist",
+            "main": "jquery-ui",
+            "deps": [
+              "jquery"
+            ],
+            "resources": [
+              "jquery-ui.css"
+            ]
+          },
+          {
+            "name": "lodash",
+            "path": "../node_modules/lodash",
+            "main": "lodash"
+          },
+          {
+            "name": "gridstack",
+            "path": "../node_modules/gridstack/dist",
+            "main": "gridstack.min",
+            "deps": [
+              "jquery",
+              "jquery-ui",
+              "lodash"
+            ],
+            "resources": [
+              "gridstack.min.css"
+            ]
           }
         ]
       }
