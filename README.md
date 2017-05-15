@@ -1,6 +1,4 @@
 # aurelia_gridstack
-A sample of gridstack in an Aurelia app by Aurelia CLI
-
 An application that show how to use gridstack in an Aurelia App by Aurelia CLI
 
 ## Machine Setup
@@ -45,10 +43,12 @@ See [the CLI documentation](https://github.com/aurelia/cli) for other available 
 There is a problem with the drag and drop and the resize features.
 The gridstack 0.3.0 need to refer `gridstack.min.js` and `gridstack.jQueryUI.min.js`, or only `gridstack.all.js`;
 
-Actualy this project just use the `gridstack.min.js` file because when refer the `gridstack.jQueryUI.min.js` occurs the folow errors:
+Currently this project just uses the `gridstack.min.js` file because when refer to the `gridstack.jQueryUI.min.js` the following errors occur:
 
 ```
-Uncaught Error: Mismatched anonymous define() module: function (a,b){function c(a){this.grid=a}var d=window,e=function(a,b,c){var d=function(){return console.warn("gridstack.js: Function `"+b+"` is deprecated as of v0.2.5 and has been replaced with `"+c+"`. It will be **completely** removed in v1.0."),a.apply(this,arguments)};
+Uncaught Error: Mismatched anonymous define() module: function (a,b){function c(a){this.grid=a}var d=window,e=function(a,b,c)
+{var d=function(){return console.warn("gridstack.js: Function `"+b+"` is deprecated as of v0.2.5 and has been replaced with 
+`"+c+"`. It will be **completely** removed in v1.0."),a.apply(this,arguments)};
 ...
 http://requirejs.org/docs/errors.html#mismatch
     at makeError (vendor-bundle.js:3952)
@@ -56,7 +56,10 @@ http://requirejs.org/docs/errors.html#mismatch
     at vendor-bundle.js:5236
 ```
 ```
-Uncaught Error: Mismatched anonymous define() module: function (a,b,c){function d(a){c.GridStackDragDropPlugin.call(this,a)}window;return c.GridStackDragDropPlugin.registerPlugin(d),d.prototype=Object.create(c.GridStackDragDropPlugin.prototype),d.prototype.constructor=d,d.prototype.resizable=function(c,d)
+Uncaught Error: Mismatched anonymous define() module: function (a,b,c){function d(a)
+{c.GridStackDragDropPlugin.call(this,a)}window;return
+c.GridStackDragDropPlugin.registerPlugin(d),d.prototype=Object.create(c.GridStackDragDropPlugin.prototype),
+d.prototype.constructor=d,d.prototype.resizable=function(c,d)
 ...
 http://requirejs.org/docs/errors.html#mismatch
     at makeError (vendor-bundle.js:3952)
@@ -64,5 +67,9 @@ http://requirejs.org/docs/errors.html#mismatch
     at vendor-bundle.js:5236
 ```
 
-To see that error change on `aurelia.json` the line `"main": "gridstack.min",` to `"main": "gridstack.all",`
+To see this error change `aurelia.json` the line `"main": "gridstack.min",` to `"main": "gridstack.all",`
+
+The same error is related on the gridstack issue https://github.com/troolee/gridstack.js/issues/613
+
+
 
