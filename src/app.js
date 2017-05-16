@@ -1,3 +1,4 @@
+import 'gridstack.jQueryUI';
 import gridstack from 'gridstack';
 
 export class App {
@@ -12,11 +13,11 @@ export class App {
   }
 
   attached() {
-    var options = {
+    this.options = {
       cellHeight: 80,
       verticalMargin: 10
     };
-    $('.grid-stack').gridstack(options);
+    $('.grid-stack').gridstack(this.options);
   }
 
   lastAddTop = 2;
@@ -24,6 +25,10 @@ export class App {
     let content = 'new item ' + this.items.length;
     this.items.push(new Item(0,this.lastAddTop,2,2, content));
     this.lastAddTop +=2;
+    
+    setTimeout(function() {
+      $('.grid-stack').gridstack(this.options);
+    }, 200);
   }
 }
 

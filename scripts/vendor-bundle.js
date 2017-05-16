@@ -73384,4 +73384,98 @@ j.prototype.remove_widget=e(j.prototype.removeWidget,"remove_widget","removeWidg
 //# sourceMappingURL=gridstack.min.map;define('gridstack', ['gridstack/gridstack.min'], function (main) { return main; });
 
 define('text!gridstack/gridstack.min.css', ['module'], function(module) { module.exports = ":root .grid-stack-item>.ui-resizable-handle{filter:none}.grid-stack{position:relative}.grid-stack.grid-stack-rtl{direction:ltr}.grid-stack.grid-stack-rtl>.grid-stack-item{direction:rtl}.grid-stack .grid-stack-placeholder>.placeholder-content{border:1px dashed #d3d3d3;margin:0;position:absolute;top:0;left:10px;right:10px;bottom:0;width:auto;z-index:0!important;text-align:center}.grid-stack>.grid-stack-item{min-width:8.3333333333%;position:absolute;padding:0}.grid-stack>.grid-stack-item>.grid-stack-item-content{margin:0;position:absolute;top:0;left:10px;right:10px;bottom:0;width:auto;z-index:0!important;overflow-x:hidden;overflow-y:auto}.grid-stack>.grid-stack-item>.ui-resizable-handle{position:absolute;font-size:.1px;display:block;-ms-touch-action:none;touch-action:none}.grid-stack>.grid-stack-item.ui-resizable-autohide>.ui-resizable-handle,.grid-stack>.grid-stack-item.ui-resizable-disabled>.ui-resizable-handle{display:none}.grid-stack>.grid-stack-item.ui-draggable-dragging,.grid-stack>.grid-stack-item.ui-resizable-resizing{z-index:100}.grid-stack>.grid-stack-item.ui-draggable-dragging>.grid-stack-item-content,.grid-stack>.grid-stack-item.ui-resizable-resizing>.grid-stack-item-content{box-shadow:1px 4px 6px rgba(0,0,0,.2);opacity:.8}.grid-stack>.grid-stack-item>.ui-resizable-se,.grid-stack>.grid-stack-item>.ui-resizable-sw{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDUxMS42MjYgNTExLjYyNyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTExLjYyNiA1MTEuNjI3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTMyOC45MDYsNDAxLjk5NGgtMzYuNTUzVjEwOS42MzZoMzYuNTUzYzQuOTQ4LDAsOS4yMzYtMS44MDksMTIuODQ3LTUuNDI2YzMuNjEzLTMuNjE1LDUuNDIxLTcuODk4LDUuNDIxLTEyLjg0NSAgIGMwLTQuOTQ5LTEuODAxLTkuMjMxLTUuNDI4LTEyLjg1MWwtNzMuMDg3LTczLjA5QzI2NS4wNDQsMS44MDksMjYwLjc2LDAsMjU1LjgxMywwYy00Ljk0OCwwLTkuMjI5LDEuODA5LTEyLjg0Nyw1LjQyNCAgIGwtNzMuMDg4LDczLjA5Yy0zLjYxOCwzLjYxOS01LjQyNCw3LjkwMi01LjQyNCwxMi44NTFjMCw0Ljk0NiwxLjgwNyw5LjIyOSw1LjQyNCwxMi44NDVjMy42MTksMy42MTcsNy45MDEsNS40MjYsMTIuODUsNS40MjYgICBoMzYuNTQ1djI5Mi4zNThoLTM2LjU0MmMtNC45NTIsMC05LjIzNSwxLjgwOC0xMi44NSw1LjQyMWMtMy42MTcsMy42MjEtNS40MjQsNy45MDUtNS40MjQsMTIuODU0ICAgYzAsNC45NDUsMS44MDcsOS4yMjcsNS40MjQsMTIuODQ3bDczLjA4OSw3My4wODhjMy42MTcsMy42MTcsNy44OTgsNS40MjQsMTIuODQ3LDUuNDI0YzQuOTUsMCw5LjIzNC0xLjgwNywxMi44NDktNS40MjQgICBsNzMuMDg3LTczLjA4OGMzLjYxMy0zLjYyLDUuNDIxLTcuOTAxLDUuNDIxLTEyLjg0N2MwLTQuOTQ4LTEuODA4LTkuMjMyLTUuNDIxLTEyLjg1NCAgIEMzMzguMTQyLDQwMy44MDIsMzMzLjg1Nyw0MDEuOTk0LDMyOC45MDYsNDAxLjk5NHoiIGZpbGw9IiM2NjY2NjYiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);background-repeat:no-repeat;background-position:center;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}.grid-stack>.grid-stack-item>.ui-resizable-se{-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)}.grid-stack>.grid-stack-item>.ui-resizable-nw{cursor:nw-resize;width:20px;height:20px;left:10px;top:0}.grid-stack>.grid-stack-item>.ui-resizable-n{cursor:n-resize;height:10px;top:0;left:25px;right:25px}.grid-stack>.grid-stack-item>.ui-resizable-ne{cursor:ne-resize;width:20px;height:20px;right:10px;top:0}.grid-stack>.grid-stack-item>.ui-resizable-e{cursor:e-resize;width:10px;right:10px;top:15px;bottom:15px}.grid-stack>.grid-stack-item>.ui-resizable-se{cursor:se-resize;width:20px;height:20px;right:10px;bottom:0}.grid-stack>.grid-stack-item>.ui-resizable-s{cursor:s-resize;height:10px;left:25px;bottom:0;right:25px}.grid-stack>.grid-stack-item>.ui-resizable-sw{cursor:sw-resize;width:20px;height:20px;left:10px;bottom:0}.grid-stack>.grid-stack-item>.ui-resizable-w{cursor:w-resize;width:10px;left:10px;top:15px;bottom:15px}.grid-stack>.grid-stack-item.ui-draggable-dragging>.ui-resizable-handle{display:none!important}.grid-stack>.grid-stack-item[data-gs-width='1']{width:8.3333333333%}.grid-stack>.grid-stack-item[data-gs-x='1']{left:8.3333333333%}.grid-stack>.grid-stack-item[data-gs-min-width='1']{min-width:8.3333333333%}.grid-stack>.grid-stack-item[data-gs-max-width='1']{max-width:8.3333333333%}.grid-stack>.grid-stack-item[data-gs-width='2']{width:16.6666666667%}.grid-stack>.grid-stack-item[data-gs-x='2']{left:16.6666666667%}.grid-stack>.grid-stack-item[data-gs-min-width='2']{min-width:16.6666666667%}.grid-stack>.grid-stack-item[data-gs-max-width='2']{max-width:16.6666666667%}.grid-stack>.grid-stack-item[data-gs-width='3']{width:25%}.grid-stack>.grid-stack-item[data-gs-x='3']{left:25%}.grid-stack>.grid-stack-item[data-gs-min-width='3']{min-width:25%}.grid-stack>.grid-stack-item[data-gs-max-width='3']{max-width:25%}.grid-stack>.grid-stack-item[data-gs-width='4']{width:33.3333333333%}.grid-stack>.grid-stack-item[data-gs-x='4']{left:33.3333333333%}.grid-stack>.grid-stack-item[data-gs-min-width='4']{min-width:33.3333333333%}.grid-stack>.grid-stack-item[data-gs-max-width='4']{max-width:33.3333333333%}.grid-stack>.grid-stack-item[data-gs-width='5']{width:41.6666666667%}.grid-stack>.grid-stack-item[data-gs-x='5']{left:41.6666666667%}.grid-stack>.grid-stack-item[data-gs-min-width='5']{min-width:41.6666666667%}.grid-stack>.grid-stack-item[data-gs-max-width='5']{max-width:41.6666666667%}.grid-stack>.grid-stack-item[data-gs-width='6']{width:50%}.grid-stack>.grid-stack-item[data-gs-x='6']{left:50%}.grid-stack>.grid-stack-item[data-gs-min-width='6']{min-width:50%}.grid-stack>.grid-stack-item[data-gs-max-width='6']{max-width:50%}.grid-stack>.grid-stack-item[data-gs-width='7']{width:58.3333333333%}.grid-stack>.grid-stack-item[data-gs-x='7']{left:58.3333333333%}.grid-stack>.grid-stack-item[data-gs-min-width='7']{min-width:58.3333333333%}.grid-stack>.grid-stack-item[data-gs-max-width='7']{max-width:58.3333333333%}.grid-stack>.grid-stack-item[data-gs-width='8']{width:66.6666666667%}.grid-stack>.grid-stack-item[data-gs-x='8']{left:66.6666666667%}.grid-stack>.grid-stack-item[data-gs-min-width='8']{min-width:66.6666666667%}.grid-stack>.grid-stack-item[data-gs-max-width='8']{max-width:66.6666666667%}.grid-stack>.grid-stack-item[data-gs-width='9']{width:75%}.grid-stack>.grid-stack-item[data-gs-x='9']{left:75%}.grid-stack>.grid-stack-item[data-gs-min-width='9']{min-width:75%}.grid-stack>.grid-stack-item[data-gs-max-width='9']{max-width:75%}.grid-stack>.grid-stack-item[data-gs-width='10']{width:83.3333333333%}.grid-stack>.grid-stack-item[data-gs-x='10']{left:83.3333333333%}.grid-stack>.grid-stack-item[data-gs-min-width='10']{min-width:83.3333333333%}.grid-stack>.grid-stack-item[data-gs-max-width='10']{max-width:83.3333333333%}.grid-stack>.grid-stack-item[data-gs-width='11']{width:91.6666666667%}.grid-stack>.grid-stack-item[data-gs-x='11']{left:91.6666666667%}.grid-stack>.grid-stack-item[data-gs-min-width='11']{min-width:91.6666666667%}.grid-stack>.grid-stack-item[data-gs-max-width='11']{max-width:91.6666666667%}.grid-stack>.grid-stack-item[data-gs-width='12']{width:100%}.grid-stack>.grid-stack-item[data-gs-x='12']{left:100%}.grid-stack>.grid-stack-item[data-gs-min-width='12']{min-width:100%}.grid-stack>.grid-stack-item[data-gs-max-width='12']{max-width:100%}.grid-stack.grid-stack-animate,.grid-stack.grid-stack-animate .grid-stack-item{-webkit-transition:left .3s,top .3s,height .3s,width .3s;-moz-transition:left .3s,top .3s,height .3s,width .3s;-ms-transition:left .3s,top .3s,height .3s,width .3s;-o-transition:left .3s,top .3s,height .3s,width .3s;transition:left .3s,top .3s,height .3s,width .3s}.grid-stack.grid-stack-animate .grid-stack-item.grid-stack-placeholder,.grid-stack.grid-stack-animate .grid-stack-item.ui-draggable-dragging,.grid-stack.grid-stack-animate .grid-stack-item.ui-resizable-resizing{-webkit-transition:left 0s,top 0s,height 0s,width 0s;-moz-transition:left 0s,top 0s,height 0s,width 0s;-ms-transition:left 0s,top 0s,height 0s,width 0s;-o-transition:left 0s,top 0s,height 0s,width 0s;transition:left 0s,top 0s,height 0s,width 0s}.grid-stack.grid-stack-one-column-mode{height:auto!important}.grid-stack.grid-stack-one-column-mode>.grid-stack-item{position:relative!important;width:auto!important;left:0!important;top:auto!important;margin-bottom:20px;max-width:none!important}.grid-stack.grid-stack-one-column-mode>.grid-stack-item>.ui-resizable-handle{display:none}"; });
-function _aureliaConfigureModuleLoader(){requirejs.config({"baseUrl":"src/","paths":{"aurelia-bootstrapper":"..\\node_modules\\aurelia-bootstrapper\\dist\\amd\\aurelia-bootstrapper","aurelia-binding":"..\\node_modules\\aurelia-binding\\dist\\amd\\aurelia-binding","aurelia-framework":"..\\node_modules\\aurelia-framework\\dist\\amd\\aurelia-framework","aurelia-event-aggregator":"..\\node_modules\\aurelia-event-aggregator\\dist\\amd\\aurelia-event-aggregator","aurelia-dependency-injection":"..\\node_modules\\aurelia-dependency-injection\\dist\\amd\\aurelia-dependency-injection","aurelia-history":"..\\node_modules\\aurelia-history\\dist\\amd\\aurelia-history","aurelia-history-browser":"..\\node_modules\\aurelia-history-browser\\dist\\amd\\aurelia-history-browser","aurelia-loader":"..\\node_modules\\aurelia-loader\\dist\\amd\\aurelia-loader","aurelia-loader-default":"..\\node_modules\\aurelia-loader-default\\dist\\amd\\aurelia-loader-default","aurelia-logging-console":"..\\node_modules\\aurelia-logging-console\\dist\\amd\\aurelia-logging-console","aurelia-pal-browser":"..\\node_modules\\aurelia-pal-browser\\dist\\amd\\aurelia-pal-browser","aurelia-path":"..\\node_modules\\aurelia-path\\dist\\amd\\aurelia-path","aurelia-metadata":"..\\node_modules\\aurelia-metadata\\dist\\amd\\aurelia-metadata","aurelia-pal":"..\\node_modules\\aurelia-pal\\dist\\amd\\aurelia-pal","aurelia-logging":"..\\node_modules\\aurelia-logging\\dist\\amd\\aurelia-logging","aurelia-route-recognizer":"..\\node_modules\\aurelia-route-recognizer\\dist\\amd\\aurelia-route-recognizer","aurelia-polyfills":"..\\node_modules\\aurelia-polyfills\\dist\\amd\\aurelia-polyfills","aurelia-router":"..\\node_modules\\aurelia-router\\dist\\amd\\aurelia-router","aurelia-task-queue":"..\\node_modules\\aurelia-task-queue\\dist\\amd\\aurelia-task-queue","aurelia-templating-binding":"..\\node_modules\\aurelia-templating-binding\\dist\\amd\\aurelia-templating-binding","aurelia-templating":"..\\node_modules\\aurelia-templating\\dist\\amd\\aurelia-templating","text":"..\\node_modules\\text\\text","jquery":"..\\node_modules\\jquery\\dist\\jquery","app-bundle":"../scripts/app-bundle"},"packages":[{"name":"aurelia-templating-resources","location":"../node_modules/aurelia-templating-resources/dist/amd","main":"aurelia-templating-resources"},{"name":"aurelia-templating-router","location":"../node_modules/aurelia-templating-router/dist/amd","main":"aurelia-templating-router"},{"name":"aurelia-testing","location":"../node_modules/aurelia-testing/dist/amd","main":"aurelia-testing"},{"name":"gridstack","location":"../node_modules/gridstack/dist","main":"gridstack.min"},{"name":"jquery-ui","location":"../node_modules/jquery-ui-dist","main":"jquery-ui"},{"name":"lodash","location":"../node_modules/lodash","main":"lodash"}],"stubModules":["text"],"shim":{"gridstack":{"deps":["jquery","jquery-ui","lodash"]},"jquery-ui":{"deps":["jquery"]}},"bundles":{"app-bundle":["app","environment","main","resources/index"]}})}
+/**
+ * gridstack.js 0.3.0
+ * http://troolee.github.io/gridstack.js/
+ * (c) 2014-2016 Pavel Reznikov, Dylan Weiss
+ * gridstack.js may be freely distributed under the MIT license.
+ * @preserve
+*/
+(function(factory) {
+    if (typeof define === 'function' && define.amd) {
+        define('gridstack.jQueryUI/gridstack.jQueryUI',['jquery', 'lodash', 'gridstack', 'jquery-ui'], factory);
+    } else if (typeof exports !== 'undefined') {
+        try { jQuery = require('jquery'); } catch (e) {}
+        try { _ = require('lodash'); } catch (e) {}
+        try { GridStackUI = require('gridstack'); } catch (e) {}
+        factory(jQuery, _, GridStackUI);
+    } else {
+        factory(jQuery, _, GridStackUI);
+    }
+})(function($, _, GridStackUI) {
+
+    var scope = window;
+
+    /**
+    * @class JQueryUIGridStackDragDropPlugin
+    * jQuery UI implementation of drag'n'drop gridstack plugin.
+    */
+    function JQueryUIGridStackDragDropPlugin(grid) {
+        GridStackUI.GridStackDragDropPlugin.call(this, grid);
+    }
+
+    GridStackUI.GridStackDragDropPlugin.registerPlugin(JQueryUIGridStackDragDropPlugin);
+
+    JQueryUIGridStackDragDropPlugin.prototype = Object.create(GridStackUI.GridStackDragDropPlugin.prototype);
+    JQueryUIGridStackDragDropPlugin.prototype.constructor = JQueryUIGridStackDragDropPlugin;
+
+    JQueryUIGridStackDragDropPlugin.prototype.resizable = function(el, opts) {
+        el = $(el);
+        if (opts === 'disable' || opts === 'enable') {
+            el.resizable(opts);
+        } else if (opts === 'option') {
+            var key = arguments[2];
+            var value = arguments[3];
+            el.resizable(opts, key, value);
+        } else {
+            el.resizable(_.extend({}, this.grid.opts.resizable, {
+                start: opts.start || function() {},
+                stop: opts.stop || function() {},
+                resize: opts.resize || function() {}
+            }));
+        }
+        return this;
+    };
+
+    JQueryUIGridStackDragDropPlugin.prototype.draggable = function(el, opts) {
+        el = $(el);
+        if (opts === 'disable' || opts === 'enable') {
+            el.draggable(opts);
+        } else {
+            el.draggable(_.extend({}, this.grid.opts.draggable, {
+                containment: this.grid.opts.isNested ? this.grid.container.parent() : null,
+                start: opts.start || function() {},
+                stop: opts.stop || function() {},
+                drag: opts.drag || function() {}
+            }));
+        }
+        return this;
+    };
+
+    JQueryUIGridStackDragDropPlugin.prototype.droppable = function(el, opts) {
+        el = $(el);
+        if (opts === 'disable' || opts === 'enable') {
+            el.droppable(opts);
+        } else {
+            el.droppable({
+                accept: opts.accept
+            });
+        }
+        return this;
+    };
+
+    JQueryUIGridStackDragDropPlugin.prototype.isDroppable = function(el, opts) {
+        el = $(el);
+        return Boolean(el.data('droppable'));
+    };
+
+    JQueryUIGridStackDragDropPlugin.prototype.on = function(el, eventName, callback) {
+        $(el).on(eventName, callback);
+        return this;
+    };
+
+    return JQueryUIGridStackDragDropPlugin;
+});
+;define('gridstack.jQueryUI', ['gridstack.jQueryUI/gridstack.jQueryUI'], function (main) { return main; });
+
+function _aureliaConfigureModuleLoader(){requirejs.config({"baseUrl":"src/","paths":{"aurelia-binding":"..\\node_modules\\aurelia-binding\\dist\\amd\\aurelia-binding","aurelia-bootstrapper":"..\\node_modules\\aurelia-bootstrapper\\dist\\amd\\aurelia-bootstrapper","aurelia-dependency-injection":"..\\node_modules\\aurelia-dependency-injection\\dist\\amd\\aurelia-dependency-injection","aurelia-event-aggregator":"..\\node_modules\\aurelia-event-aggregator\\dist\\amd\\aurelia-event-aggregator","aurelia-framework":"..\\node_modules\\aurelia-framework\\dist\\amd\\aurelia-framework","aurelia-history":"..\\node_modules\\aurelia-history\\dist\\amd\\aurelia-history","aurelia-loader":"..\\node_modules\\aurelia-loader\\dist\\amd\\aurelia-loader","aurelia-history-browser":"..\\node_modules\\aurelia-history-browser\\dist\\amd\\aurelia-history-browser","aurelia-loader-default":"..\\node_modules\\aurelia-loader-default\\dist\\amd\\aurelia-loader-default","aurelia-logging":"..\\node_modules\\aurelia-logging\\dist\\amd\\aurelia-logging","aurelia-logging-console":"..\\node_modules\\aurelia-logging-console\\dist\\amd\\aurelia-logging-console","aurelia-metadata":"..\\node_modules\\aurelia-metadata\\dist\\amd\\aurelia-metadata","aurelia-pal":"..\\node_modules\\aurelia-pal\\dist\\amd\\aurelia-pal","aurelia-pal-browser":"..\\node_modules\\aurelia-pal-browser\\dist\\amd\\aurelia-pal-browser","aurelia-path":"..\\node_modules\\aurelia-path\\dist\\amd\\aurelia-path","aurelia-polyfills":"..\\node_modules\\aurelia-polyfills\\dist\\amd\\aurelia-polyfills","aurelia-route-recognizer":"..\\node_modules\\aurelia-route-recognizer\\dist\\amd\\aurelia-route-recognizer","aurelia-router":"..\\node_modules\\aurelia-router\\dist\\amd\\aurelia-router","aurelia-task-queue":"..\\node_modules\\aurelia-task-queue\\dist\\amd\\aurelia-task-queue","aurelia-templating":"..\\node_modules\\aurelia-templating\\dist\\amd\\aurelia-templating","aurelia-templating-binding":"..\\node_modules\\aurelia-templating-binding\\dist\\amd\\aurelia-templating-binding","text":"..\\node_modules\\text\\text","jquery":"..\\node_modules\\jquery\\dist\\jquery","app-bundle":"../scripts/app-bundle"},"packages":[{"name":"aurelia-templating-resources","location":"../node_modules/aurelia-templating-resources/dist/amd","main":"aurelia-templating-resources"},{"name":"jquery-ui","location":"../node_modules/jquery-ui-dist","main":"jquery-ui"},{"name":"aurelia-testing","location":"../node_modules/aurelia-testing/dist/amd","main":"aurelia-testing"},{"name":"aurelia-templating-router","location":"../node_modules/aurelia-templating-router/dist/amd","main":"aurelia-templating-router"},{"name":"lodash","location":"../node_modules/lodash","main":"lodash"},{"name":"gridstack","location":"../node_modules/gridstack/dist","main":"gridstack.min"},{"name":"gridstack.jQueryUI","location":"../node_modules/gridstack/dist","main":"gridstack.jQueryUI"}],"stubModules":["text"],"shim":{"jquery-ui":{"deps":["jquery"]},"gridstack":{"deps":["jquery","jquery-ui","lodash"]},"gridstack.jQueryUI":{"deps":["jquery","jquery-ui","lodash"]}},"bundles":{"app-bundle":["app","environment","main","resources/index"]}})}

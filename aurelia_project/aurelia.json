@@ -89,7 +89,7 @@
         "prepend": [
           "node_modules/bluebird/js/browser/bluebird.core.js",
           "node_modules/aurelia-cli/lib/resources/scripts/configure-bluebird.js",
-          "node_modules/requirejs/require.js"
+          "node_modules/requirejs/require.js"          
         ],
         "dependencies": [
           "aurelia-binding",
@@ -159,6 +159,16 @@
             "resources": [
               "gridstack.min.css"
             ]
+          },
+          {
+            "name": "gridstack.jQueryUI",
+            "path": "../node_modules/gridstack/dist",
+            "main": "gridstack.jQueryUI",
+            "deps": [
+              "jquery",
+              "jquery-ui",
+              "lodash"
+            ]    
           }
         ]
       }
