@@ -1,0 +1,8 @@
+<template>
+    <div ref="item.DOMref" data-gs-id.bind="item.id" class="grid-stack-item"  data-gs-x="${item.x}" data-gs-y="${item.y}" data-gs-width="${item.width}" data-gs-height="${item.height}" data-gs-auto-position="1" >        
+        <div class="grid-stack-item-content">
+            <h1>${item.content}</h1>
+            <input type="button" click.trigger="removeItem()" value="remove"></div>
+        </div>
+    </div>
+</template>

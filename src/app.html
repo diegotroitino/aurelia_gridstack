@@ -1,52 +1,20 @@
 <template>
   <require from="./app.css"></require>
   <require from="gridstack/gridstack.min.css"></require>
-  <h1>${message}</h1>
-  <h3>Static grid</h3>
-  <div class="grid-stack" data-gs-width="12" data-gs-animate="yes">
-    <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2">
-      <div class="grid-stack-item-content">1</div>
-    </div>
-    <div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="4">
-      <div class="grid-stack-item-content">2</div>
-    </div>
-    <div class="grid-stack-item" data-gs-x="8" data-gs-y="0" data-gs-width="2" data-gs-height="2" data-gs-min-width="2" data-gs-no-resize="yes">
-      <div class="grid-stack-item-content"> <span class="fa fa-hand-o-up"></span> Drag me! </div>
-    </div>
-    <div class="grid-stack-item" data-gs-x="10" data-gs-y="0" data-gs-width="2" data-gs-height="2">
-      <div class="grid-stack-item-content">4</div>
-    </div>
-    <div class="grid-stack-item" data-gs-x="0" data-gs-y="2" data-gs-width="2" data-gs-height="2">
-      <div class="grid-stack-item-content">5</div>
-    </div>
-    <div class="grid-stack-item" data-gs-x="2" data-gs-y="2" data-gs-width="2" data-gs-height="4">
-      <div class="grid-stack-item-content">6</div>
-    </div>
-    <div class="grid-stack-item" data-gs-x="8" data-gs-y="2" data-gs-width="4" data-gs-height="2">
-      <div class="grid-stack-item-content">7</div>
-    </div>
-    <div class="grid-stack-item" data-gs-x="0" data-gs-y="4" data-gs-width="2" data-gs-height="2">
-      <div class="grid-stack-item-content">8</div>
-    </div>
-    <div class="grid-stack-item" data-gs-x="4" data-gs-y="4" data-gs-width="4" data-gs-height="2">
-      <div class="grid-stack-item-content">9</div>
-    </div>
-    <div class="grid-stack-item" data-gs-x="8" data-gs-y="4" data-gs-width="2" data-gs-height="2">
-      <div class="grid-stack-item-content">10</div>
-    </div>
-    <div class="grid-stack-item" data-gs-x="10" data-gs-y="4" data-gs-width="2" data-gs-height="2">
-      <div class="grid-stack-item-content">11</div>
-    </div>
-  </div>
+  <require from="./item-view"></require>
   <h3>Dynamic grid
   <input type="button" click.trigger="addItem()" value="Add" />
+  <input type="button" click.trigger="printItens()" value="Print List at console" />
   </h3>
-  <div class="grid-stack" data-gs-width="12" data-gs-animate="yes">
-    <div class="grid-stack-item" repeat.for="item of items" data-gs-x="${item.x}" data-gs-y="${item.y}" data-gs-width="${item.width}" data-gs-height="${item.height}">
-      <div class="grid-stack-item-content">
-        ${item.content}
-      </div>
-    </div>
+  <div class="grid-stack dynamic-grid-stack" data-gs-width="12" data-gs-animate="yes">
+    <item-view repeat.for="item of items" item.bind="item" rendered.call="itemAttached($event)" removed.call="itemRemoved($event)" ></item-view>    
+  </div>
+  <div repeat.for="item of items" >
+    id:${item.id}
+    x:${item.x}
+    y:${item.y}
+    height:${item.height}
+    wigth:${item.width}
   </div>
 
 </template>
