@@ -38,38 +38,35 @@ au run --watch
 ```
 See [the CLI documentation](https://github.com/aurelia/cli) for other available commands or type `au help` on the command line.
 
-## Problems
+## Note
 
-There is a problem with the drag and drop and the resize features.
-The gridstack 0.3.0 need to refer `gridstack.min.js` and `gridstack.jQueryUI.min.js`, or only `gridstack.all.js`;
-
-Currently this project just uses the `gridstack.min.js` file because when refer to the `gridstack.jQueryUI.min.js` the following errors occur:
-
+To it works properly, is necessary change the `gridstack.jQueryUI.js` dependency from this:
 ```
-Uncaught Error: Mismatched anonymous define() module: function (a,b){function c(a){this.grid=a}var d=window,e=function(a,b,c)
-{var d=function(){return console.warn("gridstack.js: Function `"+b+"` is deprecated as of v0.2.5 and has been replaced with 
-`"+c+"`. It will be **completely** removed in v1.0."),a.apply(this,arguments)};
-...
-http://requirejs.org/docs/errors.html#mismatch
-    at makeError (vendor-bundle.js:3952)
-    at intakeDefines (vendor-bundle.js:5038)
-    at vendor-bundle.js:5236
+(function(factory) {
+    if (typeof define === 'function' && define.amd) {
+        define(['jquery', 'lodash', 'gridstack', 'jquery-ui/data', 'jquery-ui/disable-selection', 'jquery-ui/focusable',
+            'jquery-ui/form', 'jquery-ui/ie', 'jquery-ui/keycode', 'jquery-ui/labels', 'jquery-ui/jquery-1-7',
+            'jquery-ui/plugin', 'jquery-ui/safe-active-element', 'jquery-ui/safe-blur', 'jquery-ui/scroll-parent',
+            'jquery-ui/tabbable', 'jquery-ui/unique-id', 'jquery-ui/version', 'jquery-ui/widget',
+            'jquery-ui/widgets/mouse', 'jquery-ui/widgets/draggable', 'jquery-ui/widgets/droppable',
+            'jquery-ui/widgets/resizable'], factory);
+    } else if (typeof exports !== 'undefined') {
+    ...
+ ```
+ 
+to this:
 ```
-```
-Uncaught Error: Mismatched anonymous define() module: function (a,b,c){function d(a)
-{c.GridStackDragDropPlugin.call(this,a)}window;return
-c.GridStackDragDropPlugin.registerPlugin(d),d.prototype=Object.create(c.GridStackDragDropPlugin.prototype),
-d.prototype.constructor=d,d.prototype.resizable=function(c,d)
-...
-http://requirejs.org/docs/errors.html#mismatch
-    at makeError (vendor-bundle.js:3952)
-    at intakeDefines (vendor-bundle.js:5038)
-    at vendor-bundle.js:5236
+(function(factory) {
+    if (typeof define === 'function' && define.amd) {
+        define(['jquery', 'lodash', 'gridstack', 'jquery-ui'], factory);
+    } else if (typeof exports !== 'undefined') {
+    ...
 ```
 
-To see this error change `aurelia.json` the line `"main": "gridstack.min",` to `"main": "gridstack.all",`
+It's a temporary hack until go live the [Gridstack 1.0 version](https://dylandreams.com/2017/04/26/gridstack-10-coming-soon/) that will allow change the `jQueryUI` dependency for dragging, dropping, and resizing.
 
-The same error is related on the gridstack issue https://github.com/troolee/gridstack.js/issues/613
+
+This situation is discussed on the gridstack issue https://github.com/troolee/gridstack.js/issues/613
 
 
 
