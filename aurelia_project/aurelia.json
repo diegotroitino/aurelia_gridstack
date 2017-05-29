@@ -133,15 +133,9 @@
           },
           {
             "name": "jquery-ui",
-            "path": "../node_modules/jquery-ui-dist",
-            "main": "jquery-ui",
-            "deps": [
-              "jquery"
-            ],
-            "resources": [
-              "jquery-ui.css"
-            ]
-          },
+            "path": "../node_modules/jquery-ui/ui",
+            "main": "data"
+          },          
           {
             "name": "lodash",
             "path": "../node_modules/lodash",
@@ -153,7 +147,7 @@
             "main": "gridstack.min",
             "deps": [
               "jquery",
-              "jquery-ui",
+              
               "lodash"
             ],
             "resources": [
@@ -165,8 +159,7 @@
             "path": "../node_modules/gridstack/dist",
             "main": "gridstack.jQueryUI",
             "deps": [
-              "jquery",
-              "jquery-ui",
+              "jquery",              
               "lodash"
             ]    
           }

@@ -33,8 +33,6 @@ define('app',['exports', 'aurelia-framework', 'gridstack', './item', 'gridstack.
       this.items.push(new _item.Item(this.lastId++, 10, 0, 2, 2, 'bar'));
     }
 
-    App.prototype.findItem = function findItem(id) {};
-
     App.prototype.refreshItems = function refreshItems(widgets) {
       for (var i in widgets) {
         var widget = widgets[i];

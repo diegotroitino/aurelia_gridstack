@@ -1,6 +1,6 @@
 import { observable } from 'aurelia-framework';
-import 'gridstack.jQueryUI';
 import gridstack from 'gridstack';
+import 'gridstack.jQueryUI';
 import { Item } from './item';
 
 
@@ -12,10 +12,6 @@ export class App {
     this.items.push(new Item(this.lastId++, 4, 0, 4, 4, 'second'));
     this.items.push(new Item(this.lastId++, 8, 0, 2, 2, 'foo'));
     this.items.push(new Item(this.lastId++, 10, 0, 2, 2, 'bar'));
-  }
-
-  findItem(id){
-
   }
 
   refreshItems(widgets){
