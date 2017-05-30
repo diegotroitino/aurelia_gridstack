@@ -38,35 +38,13 @@ au run --watch
 ```
 See [the CLI documentation](https://github.com/aurelia/cli) for other available commands or type `au help` on the command line.
 
-## Note
+## Roadmap
 
-To it works properly, is necessary change the `gridstack.jQueryUI.js` dependency from this:
-```
-(function(factory) {
-    if (typeof define === 'function' && define.amd) {
-        define(['jquery', 'lodash', 'gridstack', 'jquery-ui/data', 'jquery-ui/disable-selection', 'jquery-ui/focusable',
-            'jquery-ui/form', 'jquery-ui/ie', 'jquery-ui/keycode', 'jquery-ui/labels', 'jquery-ui/jquery-1-7',
-            'jquery-ui/plugin', 'jquery-ui/safe-active-element', 'jquery-ui/safe-blur', 'jquery-ui/scroll-parent',
-            'jquery-ui/tabbable', 'jquery-ui/unique-id', 'jquery-ui/version', 'jquery-ui/widget',
-            'jquery-ui/widgets/mouse', 'jquery-ui/widgets/draggable', 'jquery-ui/widgets/droppable',
-            'jquery-ui/widgets/resizable'], factory);
-    } else if (typeof exports !== 'undefined') {
-    ...
- ```
- 
-to this:
-```
-(function(factory) {
-    if (typeof define === 'function' && define.amd) {
-        define(['jquery', 'lodash', 'gridstack', 'jquery-ui'], factory);
-    } else if (typeof exports !== 'undefined') {
-    ...
-```
+It will be updated to [Gridstack 1.0 version](https://dylandreams.com/2017/04/26/gridstack-10-coming-soon/) as soon as possible.
 
-It's a temporary hack until go live the [Gridstack 1.0 version](https://dylandreams.com/2017/04/26/gridstack-10-coming-soon/) that will allow change the `jQueryUI` dependency for dragging, dropping, and resizing.
+## Credits
 
-
-This situation is discussed on the gridstack issue https://github.com/troolee/gridstack.js/issues/613
+See this [gridstack issue](https://github.com/troolee/gridstack.js/issues/613) about aurelia and gridstack usage.
 
 
 
